@@ -28,7 +28,7 @@ def delay_information_send(message):
 
 
 def Extract_delay_information():
-    url = 'https://transit.yahoo.co.jp/diainfo/46/46'
+    url = 'https://transit.yahoo.co.jp/diainfo/84/0'
     r = requests.get(url)
     Soup = BeautifulSoup(r.text, 'html.parser')
     # .findでtroubleクラスのddタグを探す
