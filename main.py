@@ -13,7 +13,7 @@ load_dotenv(dotenv_path)
 
 
 # LINE Notifyと連携するためのtoken
-line_notify_token = os.environ.get("LINE_NOTIFY") 
+line_notify_token = "uE8EADp3ippY0Lzad3YIsQKgaaktdzElAdi8nbV65yC" 
 line_notify_api = 'https://notify-api.line.me/api/notify'  # LINE Notifyへの通知URL
 
 # LINENotifyにメッセージを送付
@@ -37,7 +37,7 @@ def Extract_delay_information():
     if trouble_info:
         delay_information_send("\n" + "西武池袋線は" + trouble_info.text + "です。")
     else:
-        delay_information_send("test message")
+        pass
 
 
 if __name__ == "__main__":
