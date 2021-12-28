@@ -6,14 +6,13 @@ import os
 from os.path import join, dirname
 
 
-
 load_dotenv(verbose=True)
 dotenv_path = join(dirname(__file__), '.env')
 load_dotenv(dotenv_path)
 
 
 # LINE Notifyと連携するためのtoken
-line_notify_token = "uE8EADp3ippY0Lzad3YIsQKgaaktdzElAdi8nbV65yC" 
+line_notify_token = "uE8EADp3ippY0Lzad3YIsQKgaaktdzElAdi8nbV65yC"
 line_notify_api = 'https://notify-api.line.me/api/notify'  # LINE Notifyへの通知URL
 
 # LINENotifyにメッセージを送付
