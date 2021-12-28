@@ -37,7 +37,7 @@ def Extract_delay_information():
     if trouble_info:
         delay_information_send("\n" + "京浜東北線は" + trouble_info.text + "です。")
     else:
-        pass
+        delay_information_send("test message")
 
 
 if __name__ == "__main__":
